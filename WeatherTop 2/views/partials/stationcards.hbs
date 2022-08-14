@@ -1,0 +1,46 @@
+<header class="ui header">
+    {{station.name}}
+  </header>
+  <div class="ui five inverted stackable cards">
+    <div class="card">
+      <div class="content">
+        <h2>
+          {{station.name}}
+        </h2>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2>
+          Weather
+        </h2></br> {{station.weather}}
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2>
+          Temp</br>
+        </h2>
+        {{station.temp.celsius}} C
+        <br />
+        {{station.temp.fahrenheit}} F
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2>
+          Wind
+        </h2></br>{{station.wind.speed}} bft </br>
+        {{station.wind.direction}} <br />
+        Feels Like <br /> {{station.wind.chill}}
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2>
+          Pressure
+        </h2>
+        </br>
+        {{station.pressure}}
+      </div>
+    </div>
